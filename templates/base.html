@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link type="text/css" rel="stylesheet" href="/static/css/wiki.css"/>
+	
+	<title>WikiStems</title>
+</head>
+<body>
+
+		<div class="header">
+				<div class="controls">
+					{% if user %}
+						{{user.name}} (<a class="gray-link" href="/logout">logout</a>)
+					{% else %}
+						<a class="gray-link" href="/login">login</a>
+						|
+						<a class="gray-link" href="/signup">signup</a>
+					{% endif %}
+				  </div> 
+					 <div class="controls">
+						{% block controls %}
+						{% endblock %}
+					 </div>
+          </div> <!-- class container --> 
+				<div class ="clear"></div>
+		</div> <!-- end of header  -->
+		
+		 
+
+					
+
+
+			<div id="content">
+			  {% block content %}
+			  {% endblock %}
+
+			</div> <!-- end of content -->
+
+		<script src="/static/js/jquery-1.10.2.min.js"></script>
+		<script>
+			$(document).ready(function(){
+					$(".main-title").fadeIn("slow");
+					$("#content").fadeIn("slow");
+					
+			});
+		</script>
+</body>
+
+</html>

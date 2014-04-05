@@ -1,0 +1,39 @@
+{% extends 'base.html'%}
+
+{% block content %}
+<form method="post" class="Signup">
+
+	<legend>Sign Up Form </legend>
+
+	<p>
+	<label class="fixedwidth">Username</label>
+		<input class="smallform" type="text" name="username" value="{{username}}"/>
+		<span class="error">{{error_username}}</span>
+	</p>
+	
+	<p>
+	<label class="fixedwidth">Password</label>
+		<input class="smallform" type="password" name="password"/>
+		<span class="error">{{error_password}}</span>
+	</p>
+	
+
+	<p>
+	<label class="fixedwidth">Verify password</label>
+		<input class="smallform" type="password" name="verify"/>
+		<span class="error">{{error_verify}}</span>
+	</p>
+	
+	<p>
+	<label class="fixedwidth">Email</label>
+		<input class="smallform" type="text" name="email" value="{{email}}"/>
+		<span class="error">{{error_email}}</span>
+		</p>
+	
+	    <p><input class="fixedwidth" type="submit"/></p>
+	    <input name="next-url" type="hidden"/>
+
+
+</form>
+
+{% endblock %}

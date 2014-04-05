@@ -1,0 +1,249 @@
+body {
+	-webkit-font-smoothing: antialiased;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+
+	}
+
+
+a {
+	text-decoration: none;
+	color:white;
+}
+
+#content a{
+	color: blue;
+}
+
+#header {
+	position: relative;
+	z-index: 2000;
+	border-top: 1px solid #111;
+	background-color: #151b1f;
+	min-width: 988px;
+	margin-bottom: 0;
+	height:52px;
+	color:white;
+	
+	
+		
+}
+
+.container {
+    height:52px;
+	width: 940px;
+	display:block;
+	margin:auto;
+	
+
+}
+nav.right {
+    margin:0; 
+    margin-top:12px;
+	float:right; 
+	
+
+}
+nav.right ul {
+	margin:0;
+	padding:0;
+	float:left;
+	/*display: block;*/
+	width: 100%;
+    overflow: hidden;
+
+
+}
+nav.right ul li {
+	display: inline;
+	float: left;
+    list-style: none;
+}
+
+nav.right ul li a {
+	text-decoration: none;
+    float: left;
+    padding: 5px;
+    color: white;
+}
+
+
+h1.logo {
+	height:52px;
+	margin:0;
+    float: left;
+}
+h1.logo a {
+	display: block;
+	padding:7px 7px 7px 0;
+	
+}
+
+
+
+#content {
+    margin-top: 40px;
+	margin-left: 17px;
+	margin-right: 17px;
+	
+
+}
+
+.seconds {
+	
+	text-align: right;
+}
+
+
+.main-title {
+    
+	
+	font-family: sans-serif;
+	color: yellow;
+	font-size: 40px;
+	font-weight: bold;
+	
+	/*margin-bottom: 0px;*/
+	text-decoration: none;
+	/*text-shadow:#fff 0px 1px 0, #000 0 -1px 0;*/
+	display: none;
+
+}
+
+#wrapper-div {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	width: 800px;
+	margin: 0 auto;
+	padding: 18px;
+	color: 333;
+}
+
+
+
+h2 {
+
+	font-size:24px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.error {
+	color: red;
+}
+
+label {
+	display: block;
+	font-size: 20px;
+
+}
+/* if a label follow another label*/
+label + label {
+	margin-top: 20px;
+}
+
+/*input[type=text] {
+	width:500px;
+	font-size: 20px;
+	padding: 2px;
+	font-family: monospace;
+}*/
+
+textarea {
+	width: 500px;
+	height: 300px;
+	font-size: 17px;
+	font-family: monospace;
+}
+
+input[type=submit] {
+	font-size:24px;
+}
+
+input[type=password] {
+	font-size:20px;
+}
+
+input[type=text] {
+    font-size:20px;
+}
+
+form {
+	display: block;
+}
+
+form.Signup fieldset {
+    border: 2px solid #dcdcdc;
+    
+}
+
+form.Signup {
+	margin:auto;
+	width:700px;
+	padding:0px;
+}
+
+form.Signup legend {
+    font-weight: bold;
+    font-size:small;
+    padding: 5px;
+
+}
+
+form.Signup label.fixedwidth {
+	/*display: block;*/
+	width: 170px;
+	float: left;
+}
+.smallform {
+	/*width: 100px;*/
+	font-family:monospace;
+	font-size: 20px;
+	padding: 2px;
+}
+
+.post + .post {
+	margin-top : 15px;
+
+}
+
+.post-heading {
+	color: green;
+	position:relative;
+	border-bottom:3px solid #666;
+}
+
+.post-title {
+	font-size: 24px;
+	font-weight: bold;
+	
+}
+
+.post-title a {
+    text-decoration: none;
+    color: green;
+}
+
+.post-title a:hover {
+    text-decoration: none;
+    color: #2d2d2d;
+}
+
+.post-date {
+
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	color: #999;
+}
+
+.post-content {
+	margin-top: 5px;
+}
+
+
+
+
+

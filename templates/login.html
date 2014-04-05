@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<form method="post" class="Login">
+	
+		<legend>Login</legend>
+		<p>
+			<label class="fixedwidth">Username</label>
+			<input class="smallform" type="text" name="username" value="{{username}}"/>
+
+
+		</p>
+		<p>
+			<label class="fixedwidth">Password</label>
+			<input class="smallform" type="password" name="password" value=""/>
+			<span class="error">{{error_login}}</span>
+		</p>
+		<p><input type="submit"/></p>
+		<input name="next-url" type="hidden" value="{{next_url}}"/>
+
+	
+</form>
+
+{% endblock %}
